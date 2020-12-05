@@ -3,7 +3,7 @@ import {
   NavigationItems,
   NavigationLogo,
   NavigationIcon,
-} from "./NavbarStyles";
+} from "../styles/pages/NavbarStyles";
 
 export default function Navbar() {
   return (

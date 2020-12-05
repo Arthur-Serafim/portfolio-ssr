@@ -6,6 +6,10 @@ export const Navigation = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 `
 
 export const NavigationLogo = styled.span`

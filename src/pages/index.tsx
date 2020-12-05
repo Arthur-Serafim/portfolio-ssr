@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/Navbar'
+import Developer from '../assets/developer.svg'
 
-import { Container } from '../styles/pages/Home'
+import { Container, LandingPage, Line, Label, DeveloperContainer } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +23,24 @@ const Home: React.FC = () => {
         <meta property="og:image"              content="https://lh4.googleusercontent.com/1y-biI2a6YHSoeYXfq6OTXDH4dj2PThOUvOmVH6hwgZCcwbszJTzsXjjKFw85fxnRjFeRiM9Vrpb1RFHq6ZA=w1920-h942-rw" />
       </Head>
       <Navbar />
+      <LandingPage>
+        <h1>
+          ARTHUR <br/>
+          SERAFIM
+        </h1>
+        <div>
+          <Line />
+          <br/>
+          <Line />
+        </div>
+        <Label>
+          front end developer / <br/>
+          software engineer
+        </Label>
+        <DeveloperContainer>
+          <Developer />
+        </DeveloperContainer>
+      </LandingPage>
     </Container>
   )
 }

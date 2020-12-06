@@ -7,7 +7,7 @@ import {
 
 import { Link } from 'react-scroll'
 
-export default function Navbar() {
+export default function Navbar({fullpageApi}) {
   return (
     <Navigation>
       <NavigationLogo>

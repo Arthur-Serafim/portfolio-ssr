@@ -2,12 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
-
 
   h1 {
     font-size: 54px;
@@ -44,9 +42,8 @@ export const BackgroundImage = styled.div`
 `
 
 export const LandingPage = styled.div`
-  height: 100vh;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +68,7 @@ export const Line = styled.div`
   `)}
 `
 
-export const Label = styled.span`
+export const Label = styled.p`
   margin-top: 25px;
   font-family: "Futura";
   line-height: 1.5;
@@ -130,6 +127,7 @@ export const ScrollDown = styled.div `
 export const SeeMore = styled.button`
   box-shadow: none;
   border: none;
+  display: block;
   background: ${props => props.theme.colors.primary};
   color: white;
   width: max-content;
@@ -149,15 +147,4 @@ export const SeeMore = styled.button`
   &:active {
     transform: scale(1)
   }
-`
-
-export const LandingPageImage = styled.img`
-  position: absolute;
-  z-index: -1;
-  right: 100px;
-  bottom: calc(50% - 35vh)
-  object-fit: cover;
-  border-radius: 10px;
-  width: 960px;
-  height: 708px;
 `

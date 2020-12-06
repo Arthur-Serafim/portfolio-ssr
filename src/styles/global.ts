@@ -37,7 +37,10 @@ export default createGlobalStyle`
     }
   }
 
-  .active span {
-    color: #FF4900;
+  .section {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
   }
 `

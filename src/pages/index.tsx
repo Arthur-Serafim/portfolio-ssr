@@ -1,13 +1,24 @@
 import React from 'react'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import Developer from '../assets/developer.svg'
 
-import { Container, LandingPage, Line, Label, DeveloperContainer } from '../styles/pages/Home'
+import {
+  Container,
+  LandingPage,
+  Line,
+  Label,
+  DeveloperContainer,
+  ScrollDown,
+  AboutMe,
+  Background
+} from '../styles/pages/Home'
 
 const Home: React.FC = () => {
+  React.useEffect(() => {
+  }, [])
+
   return (
-    <Container>
+    <Container onScroll={(e: any) => e.preventDefault()}>
       <Head>
         <title>ARTHUR SERAFIM PORTFOLIO</title>
         <meta
@@ -23,7 +34,7 @@ const Home: React.FC = () => {
         <meta property="og:image"              content="https://lh4.googleusercontent.com/1y-biI2a6YHSoeYXfq6OTXDH4dj2PThOUvOmVH6hwgZCcwbszJTzsXjjKFw85fxnRjFeRiM9Vrpb1RFHq6ZA=w1920-h942-rw" />
       </Head>
       <Navbar />
-      <LandingPage>
+      <LandingPage id="e1">
         <h1>
           ARTHUR <br/>
           SERAFIM
@@ -38,9 +49,15 @@ const Home: React.FC = () => {
           software engineer
         </Label>
         <DeveloperContainer>
-          <Developer />
+          <ScrollDown>
+            <span>
+              &#8595;
+            </span>
+          </ScrollDown>
         </DeveloperContainer>
       </LandingPage>
+      <AboutMe></AboutMe>
+      <Background />
     </Container>
   )
 }

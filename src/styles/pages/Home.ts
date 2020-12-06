@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100%;
   min-height: 100vh;
 
@@ -21,6 +21,16 @@ export const Container = styled.div`
   }
 `
 
+export const Background = styled.div`
+  background: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 1));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+`
+
 export const LandingPage = styled.div`
   height: 100vh;
   box-sizing: border-box;
@@ -28,7 +38,6 @@ export const LandingPage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 1));
 
   h1 {
     font-family: 'Montserrat';
@@ -42,7 +51,7 @@ export const Line = styled.div`
   width: 104px;
   height: 5px;
   border-radius: 25px;
-  background: ${props => props.theme.colors.primary};;
+  background: ${props => props.theme.colors.primary};
 
   &:last-child {
     margin-left: 52px;
@@ -60,25 +69,45 @@ export const Label = styled.span`
 
 export const DeveloperContainer = styled.div`
   position: absolute;
-  right: 100px;
+  bottom: 25px;
+  right: calc(50% - 18px);
   opacity: .5;
-  animation: float 5s infinite;
 
   & svg {
     width: 750px;
   }
+`
+
+export const ScrollDown = styled.div `
+  width: 36px;
+  height: 75px;
+  border-radius: 25px;
+  border: 2px solid ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+
+  span {
+    animation: float 3s infinite;
+  }
 
   @keyframes float {
     0% {
-      transform: translateY(-25px);
+      transform: translateY(-5px);
     }
 
     50% {
-      transform: translateY(25px);
+      transform: translateY(5px);
     }
 
     100% {
-      transform: translateY(-25px);
+      transform: translateY(-5px);
     }
   }
+`
+
+export const AboutMe = styled.div`
+  height: 100vh;
 `

@@ -14,11 +14,10 @@ import {
   SeeMore,
   Background,
   BackgroundImage,
-  LandingPageImage
 } from '../styles/pages/Home'
 import { NavigationIcon } from '../styles/pages/NavbarStyles'
 
-const anchors = ['Home', 'MouseOne', 'GM-Routing', 'About', 'Contact']
+const anchors = ['Home', 'About', 'MouseOne', 'GM-Routing', 'Contact']
 
 const Home: React.FC = () => {
   return (
@@ -67,11 +66,24 @@ const Home: React.FC = () => {
                 </Label>
                 <DeveloperContainer>
                   <ScrollDown
-                    onClick={() => state.fullpageApi.moveTo('MouseOne', 2)}
+                    onClick={() => state.fullpageApi.moveTo('About', 2)}
                   >
                     <span>&#8595;</span>
                   </ScrollDown>
                 </DeveloperContainer>
+              </LandingPage>
+              <LandingPage id="about" className="section">
+                <h1>ABOUT ME</h1>
+                <div>
+                  <Line />
+                  <br />
+                  <Line slot="end" />
+                </div>
+                <Label>
+                  I love Novels, Games and <br />
+                  Technology
+                </Label>
+                <SeeMore>Show me more</SeeMore>
               </LandingPage>
               <LandingPage id="projects" className="section">
                 <h1>
@@ -99,19 +111,6 @@ const Home: React.FC = () => {
                   Routing software for delivery <br /> optimization
                 </Label>
                 <SeeMore>See case study</SeeMore>
-              </LandingPage>
-              <LandingPage id="about" className="section">
-                <h1>ABOUT ME</h1>
-                <div>
-                  <Line />
-                  <br />
-                  <Line slot="end" />
-                </div>
-                <Label>
-                  I love Novels, Games and <br />
-                  Technology
-                </Label>
-                <SeeMore>Show me more</SeeMore>
               </LandingPage>
               <LandingPage id="contact" className="section">
                 <h1>GET IN TOUCH</h1>

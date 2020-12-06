@@ -7,11 +7,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  h1 {
-    font-size: 54px;
-    margin-top: 40px;
-  }
-
   p {
     margin-top: 24px;
     font-size: 24px;
@@ -31,7 +26,7 @@ export const Background = styled.div`
 
 export const BackgroundImage = styled.div`
   background: url("https://images.unsplash.com/photo-1447433819943-74a20887a81e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80");
-  background-size: 100% 100vh;
+  background-size: cover;
   opacity: .2;
   position: fixed;
   top: 0;
@@ -52,8 +47,20 @@ export const LandingPage = styled.div`
   h1 {
     font-family: 'Montserrat';
     letter-spacing: 10px;
-    font-size: 75px;
+    font-size: 62px;
     margin-bottom: 25px;
+
+    @media only screen and (max-width: 900px) {
+      font-size: 42px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 32px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 50px;
   }
 `
 
@@ -66,6 +73,14 @@ export const Line = styled.div`
   ${props => props.slot === 'end' && (`
     margin-left: 52px;
   `)}
+
+  @media only screen and (max-width: 900px) {
+    width: 70px;
+
+    ${props => props.slot === 'end' && (`
+      margin-left: 35px;
+    `)}
+  }
 `
 
 export const Label = styled.p`
@@ -75,6 +90,14 @@ export const Label = styled.p`
   font-size: 25px;
   letter-spacing: 3px;
   opacity: .75;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 18px !important;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 14px !important;
+  }
 `
 
 export const DeveloperContainer = styled.div`
@@ -146,5 +169,10 @@ export const SeeMore = styled.button`
 
   &:active {
     transform: scale(1)
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+    padding: 7px 20px;
   }
 `

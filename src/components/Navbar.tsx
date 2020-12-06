@@ -3,57 +3,22 @@ import {
   NavigationItems,
   NavigationLogo,
   NavigationLabel
-} from "../styles/pages/NavbarStyles";
+} from '../styles/pages/NavbarStyles'
 
-import { Link } from 'react-scroll'
-
-export default function Navbar({fullpageApi}) {
+export default function Navbar({ fullpageApi }) {
   return (
     <Navigation>
-      <NavigationLogo>
-        Arthur Serafim
-      </NavigationLogo>
+      <NavigationLogo>Arthur Serafim</NavigationLogo>
       <NavigationItems>
-        <Link
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
+        <NavigationLabel onClick={() => fullpageApi.moveTo("About", 2)}>About</NavigationLabel>
+        <NavigationLabel onClick={() => fullpageApi.moveTo("MouseOne", 3)}>Projects</NavigationLabel>
+        <NavigationLabel onClick={() => fullpageApi.moveTo("Contact", 5)}>Contact</NavigationLabel>
+        <a
+          href="https://drive.google.com/u/1/uc?id=19Ra4I0YQELRKNcanM6B8nDSq2qbqtq6B&export=download"
+          target="_blank"
+          rel="norel"
         >
-          <NavigationLabel>
-            Projects
-          </NavigationLabel>
-        </Link>
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <NavigationLabel>
-            About
-          </NavigationLabel>
-        </Link>
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <NavigationLabel>
-            Contact
-          </NavigationLabel>
-        </Link>
-        <a href="https://drive.google.com/u/1/uc?id=19Ra4I0YQELRKNcanM6B8nDSq2qbqtq6B&export=download" target="_blank" rel="norel">
-          <NavigationLabel>
-            Resume
-          </NavigationLabel>
+          <NavigationLabel>Resume</NavigationLabel>
         </a>
       </NavigationItems>
     </Navigation>

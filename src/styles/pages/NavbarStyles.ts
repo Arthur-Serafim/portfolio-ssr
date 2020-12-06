@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const Navigation = styled.nav`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   box-sizing: border-box;
   padding: 30px 40px;
   display: flex;
@@ -20,14 +24,20 @@ export const NavigationLogo = styled.span`
   &:hover {
     opacity: .6;
   }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 22px !important;
+  }
 `
 
 export const NavigationItems = styled.ul`
   display: flex;
   align-items: center;
-  position: fixed;
-  right: 40px;
   z-index: 1;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 22px !important;
+  }
 `
 
 export const NavigationIcon = styled.i`
@@ -51,5 +61,15 @@ export const NavigationLabel = styled.span`
 
   &:hover {
     opacity: .6;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 16px !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    &:not(:last-child) {
+      display: none;
+    }
   }
 `

@@ -13,24 +13,19 @@ export default function Navbar({ scrollAnchor }) {
         Arthur Serafim
       </NavigationLogo>
       <NavigationItems>
+        <NavigationLabel onClick={() => scrollAnchor("#mouseone")}>
+          Projects
+        </NavigationLabel>
         <NavigationLabel onClick={() => scrollAnchor("#about")}>
           About
         </NavigationLabel>
-        <a href="https://github.com/Arthur-Serafim" target="_blank" rel="norel">
-          <NavigationLabel>
-            Contact
-          </NavigationLabel>
-        </a>
-        <a href="https://github.com/Arthur-Serafim" target="_blank" rel="norel">
+        <NavigationLabel onClick={() => scrollAnchor("#contact")}>
+          Contact
+        </NavigationLabel>
+        <a href="https://drive.google.com/u/1/uc?id=19Ra4I0YQELRKNcanM6B8nDSq2qbqtq6B&export=download" target="_blank" rel="norel">
           <NavigationLabel>
             Resume
           </NavigationLabel>
-        </a>
-        <a href="https://www.linkedin.com/in/arthur-serafim-335310188/" target="_blank" rel="norel">
-          <NavigationIcon className="fab fa-linkedin-in" />
-        </a>
-        <a href="https://github.com/Arthur-Serafim" target="_blank" rel="norel">
-          <NavigationIcon className="fab fa-github" />
         </a>
       </NavigationItems>
     </Navigation>

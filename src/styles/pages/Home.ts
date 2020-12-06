@@ -28,7 +28,7 @@ export const Background = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -2;
 `
 
 export const BackgroundImage = styled.div`
@@ -40,7 +40,7 @@ export const BackgroundImage = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: -3;
 `
 
 export const LandingPage = styled.div`
@@ -50,6 +50,7 @@ export const LandingPage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   h1 {
     font-family: 'Montserrat';
@@ -148,4 +149,15 @@ export const SeeMore = styled.button`
   &:active {
     transform: scale(1)
   }
+`
+
+export const LandingPageImage = styled.img`
+  position: absolute;
+  z-index: -1;
+  right: 100px;
+  bottom: calc(50% - 35vh)
+  object-fit: cover;
+  border-radius: 10px;
+  width: 960px;
+  height: 708px;
 `

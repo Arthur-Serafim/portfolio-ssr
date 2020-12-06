@@ -25,6 +25,9 @@ export const NavigationLogo = styled.span`
 export const NavigationItems = styled.ul`
   display: flex;
   align-items: center;
+  position: fixed;
+  right: 40px;
+  z-index: 1;
 `
 
 export const NavigationIcon = styled.i`

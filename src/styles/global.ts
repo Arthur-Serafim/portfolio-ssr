@@ -19,9 +19,21 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
     font-family: Futura, sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   a {
     text-decoration: none;
+    color: inherit;
+    transition: all .4s;
+
+    &:hover {
+      opacity: .6;
+    }
   }
 `

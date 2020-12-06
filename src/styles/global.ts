@@ -36,4 +36,8 @@ export default createGlobalStyle`
       opacity: .6;
     }
   }
+
+  .active span {
+    color: #FF4900;
+  }
 `

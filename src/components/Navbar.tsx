@@ -2,26 +2,54 @@ import {
   Navigation,
   NavigationItems,
   NavigationLogo,
-  NavigationIcon,
   NavigationLabel
 } from "../styles/pages/NavbarStyles";
 
-export default function Navbar({ scrollAnchor }) {
+import { Link } from 'react-scroll'
+
+export default function Navbar() {
   return (
     <Navigation>
       <NavigationLogo>
         Arthur Serafim
       </NavigationLogo>
       <NavigationItems>
-        <NavigationLabel onClick={() => scrollAnchor("#mouseone")}>
-          Projects
-        </NavigationLabel>
-        <NavigationLabel onClick={() => scrollAnchor("#about")}>
-          About
-        </NavigationLabel>
-        <NavigationLabel onClick={() => scrollAnchor("#contact")}>
-          Contact
-        </NavigationLabel>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <NavigationLabel>
+            Projects
+          </NavigationLabel>
+        </Link>
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <NavigationLabel>
+            About
+          </NavigationLabel>
+        </Link>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <NavigationLabel>
+            Contact
+          </NavigationLabel>
+        </Link>
         <a href="https://drive.google.com/u/1/uc?id=19Ra4I0YQELRKNcanM6B8nDSq2qbqtq6B&export=download" target="_blank" rel="norel">
           <NavigationLabel>
             Resume

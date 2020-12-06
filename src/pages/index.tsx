@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-scroll'
 
 import {
   Container,
@@ -61,12 +62,21 @@ const Home: React.FC = () => {
           software engineer
         </Label>
         <DeveloperContainer>
-          <ScrollDown onClick={() => scrollIntoView('#mouseone')}>
-            <span>&#8595;</span>
-          </ScrollDown>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <ScrollDown>
+              <span>&#8595;</span>
+            </ScrollDown>
+          </Link>
         </DeveloperContainer>
       </LandingPage>
-      <LandingPage id="mouseone">
+      <LandingPage id="projects">
         <h1>
           MOUSE ONE <br /> GAMING
         </h1>
@@ -80,19 +90,20 @@ const Home: React.FC = () => {
           landing page
         </Label>
         <SeeMore>See case study</SeeMore>
-        <LandingPageImage src="https://www.awesomescreenshot.com/image/1643925/5769265-2fcde824b5fe4cb5e1e42d5102024f0f.png" alt="MouseOne"/>
+        <LandingPageImage
+          src="https://www.awesomescreenshot.com/image/1643925/5769265-2fcde824b5fe4cb5e1e42d5102024f0f.png"
+          alt="MouseOne"
+        />
       </LandingPage>
-      <LandingPage id="mouseone">
-        <h1>
-          GM-ROUTING
-        </h1>
+      <LandingPage id="projects">
+        <h1>GM-ROUTING</h1>
         <div>
           <Line />
           <br />
           <Line slot="end" />
         </div>
         <Label>
-          Routing software for delivery <br/> optimization
+          Routing software for delivery <br /> optimization
         </Label>
         <SeeMore>See case study</SeeMore>
       </LandingPage>

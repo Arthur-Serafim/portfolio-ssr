@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.18",
     "next": "9.5.2",
     "next-images": "^1.4.1",
+    "next-on-netlify": "^2.6.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scroll": "^1.8.1",

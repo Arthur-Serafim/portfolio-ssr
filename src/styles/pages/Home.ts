@@ -22,13 +22,25 @@ export const Container = styled.div`
 `
 
 export const Background = styled.div`
-  background: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 1));
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+`
+
+export const BackgroundImage = styled.div`
+  background: url("https://images.unsplash.com/photo-1447433819943-74a20887a81e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80");
+  background-size: 100% 100vh;
+  opacity: .2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
 `
 
 export const LandingPage = styled.div`
@@ -49,13 +61,13 @@ export const LandingPage = styled.div`
 
 export const Line = styled.div`
   width: 104px;
-  height: 5px;
+  height: 3px;
   border-radius: 25px;
   background: ${props => props.theme.colors.primary};
 
-  &:last-child {
+  ${props => props.slot === 'end' && (`
     margin-left: 52px;
-  }
+  `)}
 `
 
 export const Label = styled.span`
@@ -88,6 +100,12 @@ export const ScrollDown = styled.div `
   align-items: center;
   justify-content: center;
   font-size: 32px;
+  cursor: pointer;
+  transition: all .4s;
+
+  &:hover {
+    background: rgba(0, 0, 0, .4)
+  }
 
   span {
     animation: float 3s infinite;
@@ -108,6 +126,26 @@ export const ScrollDown = styled.div `
   }
 `
 
-export const AboutMe = styled.div`
-  height: 100vh;
+export const SeeMore = styled.button`
+  box-shadow: none;
+  border: none;
+  background: ${props => props.theme.colors.primary};
+  color: white;
+  width: max-content;
+  margin-top: 25px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-family: "Futura";
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .4s;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.02)
+  }
+
+  &:active {
+    transform: scale(1)
+  }
 `

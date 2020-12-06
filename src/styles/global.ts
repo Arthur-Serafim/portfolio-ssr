@@ -20,4 +20,8 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: Futura, sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
 `

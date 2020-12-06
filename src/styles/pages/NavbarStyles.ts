@@ -38,3 +38,15 @@ export const NavigationIcon = styled.i`
     opacity: .6;
   }
 `
+
+export const NavigationLabel = styled.span`
+  font-size: 22px;
+  cursor: pointer;
+  transition: all .4s;
+  margin-left: 25px;
+  color: white;
+
+  &:hover {
+    opacity: .6;
+  }
+`

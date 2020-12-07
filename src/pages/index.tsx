@@ -26,16 +26,16 @@ const Home: React.FC = () => {
         <title>Arthur Guimarães Serafim | Portfolio</title>
         <meta
           name="description"
-          content="Based in Brazil, Arthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with
+          content="Based in Guarapari, Brazil, Arthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with
             stakeholders and driving exceptional results."
         />
         <link rel="canonical" href="https://arthurserafim.com" />
         <meta property="og:url" content="https://www.arthurserafim.com" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="ARTHUR SERAFIM PORTFOLIO" />
+        <meta property="og:title" content="Arthur Guimarães Serafim | Portfolio" />
         <meta
           property="og:description"
-          content="Based in Brazil, Arthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
+          content="Based in Guarapari, Brazil, Arthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
         />
         <meta
           property="og:image"

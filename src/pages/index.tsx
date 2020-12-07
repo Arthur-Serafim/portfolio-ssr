@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <title>Arthur Guimarães Serafim | Portfolio</title>
         <meta
           name="description"
-          content="rthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with
+          content="Arthur is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with
             stakeholders and driving exceptional results."
         />
         <link rel="canonical" href="https://arthurserafim.com" />

@@ -30,7 +30,6 @@ export const AboutContainer = styled.div`
   @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
-    height: max-content;
   }
 
   @media only screen and (max-width: 500px) {
@@ -47,12 +46,8 @@ export const AboutImage = styled.img`
   max-height: 500px;
 
   @media only screen and (max-width: 900px) {
-    width: 50%;
-    height: 100%;
-  }
-
-  @media only screen and (max-width: 700px) {
     width: 75%;
+    height: 100%;
   }
 
   @media only screen and (max-width: 500px) {

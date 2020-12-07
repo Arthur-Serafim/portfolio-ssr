@@ -35,7 +35,7 @@ const Home: React.FC = () => {
         <meta property="og:title" content="Arthur Guimarães Serafim | Portfolio" />
         <meta
           property="og:description"
-          content="Based in Guarapari, Brazil, Arthur Serafim is an experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
+          content="Experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
         />
         <meta
           property="og:image"

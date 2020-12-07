@@ -16,10 +16,11 @@ export const Navigation = styled.nav`
   right: 0;
 `
 
-export const NavigationLogo = styled.span`
+export const NavigationLogo = styled.h3`
   transition: all .4s;
   cursor: pointer;
   font-size: 28px;
+  font-weight: 400;
 
   &:hover {
     opacity: .6;

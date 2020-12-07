@@ -85,7 +85,7 @@ export const Line = styled.div`
   }
 `
 
-export const Label = styled.h3`
+export const Label = styled.p`
   margin-top: 25px;
   font-family: "Futura";
   line-height: 1.5;

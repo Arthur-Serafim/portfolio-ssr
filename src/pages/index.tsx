@@ -82,10 +82,8 @@ const Home: React.FC = () => {
                   <Line slot="end" />
                 </div>
                 <Label>
-                  Hi, I'm Arthur. I love Novels, Games and
-                  Technology. <br/>
-                  Click the button bellow
-                  to know more!
+                  I love Novels, Games and <br/>
+                  Technology.
                 </Label>
                 <SeeMore>Show me more</SeeMore>
               </LandingPage>

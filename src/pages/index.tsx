@@ -41,7 +41,7 @@ const Home: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://i.imgur.com/PogqplG.png"
+          content="https://www.awesomescreenshot.com/image/1643925/5775632-07e554e282cdc4eef9c9bc07c16aa4d3.png"
         />
         <meta name="google-site-verification" content="rEMDiQIif_fstK8yFKFJSHQl-AgU7fYJh7_K3iApLXk" />
       </Head>

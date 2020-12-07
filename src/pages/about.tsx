@@ -83,7 +83,7 @@ const Home: React.FC = () => {
           property="og:description"
           content="Experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
         />
-        <meta property="og:image" content="https://i.imgur.com/PogqplG.png" />
+        <meta property="og:image" content="https://www.awesomescreenshot.com/image/1643925/5775635-1019ad4acc948ca83cfb1fc094c330af.png" />
         <meta
           name="google-site-verification"
           content="rEMDiQIif_fstK8yFKFJSHQl-AgU7fYJh7_K3iApLXk"

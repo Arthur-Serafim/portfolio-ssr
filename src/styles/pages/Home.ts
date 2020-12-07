@@ -44,7 +44,8 @@ export const LandingPage = styled.div`
   justify-content: center;
   position: relative;
 
-  h1 {
+  h1,
+  h2 {
     font-family: 'Montserrat';
     letter-spacing: 10px;
     font-size: 62px;

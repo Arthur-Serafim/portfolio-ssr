@@ -23,14 +23,14 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>ARTHUR SERAFIM PORTFOLIO</title>
+        <title>Arthur Guimarães Serafim | Portfolio</title>
         <meta
           name="description"
           content="Experienced Front End Developer and Software Engineer with a detailed history of collaborating with
             stakeholders and driving exceptional results."
         />
-        <link rel="canonical" href="http://arthurserafim.com" />
-        <meta property="og:url" content="http://www.arthurserafim.com" />
+        <link rel="canonical" href="https://arthurserafim.com" />
+        <meta property="og:url" content="https://www.arthurserafim.com" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="ARTHUR SERAFIM PORTFOLIO" />
         <meta
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                 </DeveloperContainer>
               </LandingPage>
               <LandingPage id="about" className="section">
-                <h1>ABOUT ME</h1>
+                <h2>ABOUT ME</h2>
                 <div>
                   <Line />
                   <br />
@@ -86,9 +86,9 @@ const Home: React.FC = () => {
                 <SeeMore>Show me more</SeeMore>
               </LandingPage>
               <LandingPage id="projects" className="section">
-                <h1>
+                <h2>
                   MOUSE ONE <br /> GAMING
-                </h1>
+                </h2>
                 <div>
                   <Line />
                   <br />
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
                 <SeeMore>See case study</SeeMore>
               </LandingPage>
               <LandingPage id="projects" className="section">
-                <h1>GM-ROUTING</h1>
+                <h2>GM-ROUTING</h2>
                 <div>
                   <Line />
                   <br />
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
                 <SeeMore>See case study</SeeMore>
               </LandingPage>
               <LandingPage id="contact" className="section">
-                <h1>GET IN TOUCH</h1>
+                <h2>GET IN TOUCH</h2>
                 <div>
                   <Line />
                   <br />

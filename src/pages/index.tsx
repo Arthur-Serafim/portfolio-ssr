@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://lh4.googleusercontent.com/1y-biI2a6YHSoeYXfq6OTXDH4dj2PThOUvOmVH6hwgZCcwbszJTzsXjjKFw85fxnRjFeRiM9Vrpb1RFHq6ZA=w1920-h942-rw"
+          content="https://i.imgur.com/PogqplG.png"
         />
       </Head>
       <ReactFullpage

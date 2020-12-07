@@ -11,6 +11,10 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+  }
 `
 
 export const NavigationLogo = styled.h3`

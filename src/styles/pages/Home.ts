@@ -26,6 +26,7 @@ export const Background = styled.div`
 
 export const BackgroundImage = styled.img`
   background-size: cover;
+  object-fit: cover;
   width: 100%;
   height: 100vh;
   opacity: .2;

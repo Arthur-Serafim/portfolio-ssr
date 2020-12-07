@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import { Link } from 'react-scroll'
 import ReactFullpage from '@fullpage/react-fullpage'
 
 import {
@@ -16,10 +15,13 @@ import {
   BackgroundImage,
 } from '../styles/pages/Home'
 import { NavigationIcon } from '../styles/pages/NavbarStyles'
+import { useRouter } from 'next/router'
 
 const anchors = ['Home', 'About', 'MouseOne', 'GM-Routing', 'Contact']
 
 const Home: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <Head>
@@ -86,7 +88,7 @@ const Home: React.FC = () => {
                   I love Novels, Games and <br/>
                   Technology.
                 </Label>
-                <SeeMore>Show me more</SeeMore>
+                <SeeMore onClick={() => router.push('/about')}>Show me more</SeeMore>
               </LandingPage>
               <LandingPage id="projects" className="section">
                 <h2>

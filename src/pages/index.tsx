@@ -52,8 +52,10 @@ const Home: React.FC = () => {
               <Navbar fullpageApi={state.fullpageApi}/>
               <LandingPage className="section">
                 <h1>
-                  ARTHUR <br />
-                  SERAFIM
+                  <strong>
+                    ARTHUR <br />
+                    SERAFIM
+                  </strong>
                 </h1>
                 <div>
                   <Line />
@@ -80,8 +82,10 @@ const Home: React.FC = () => {
                   <Line slot="end" />
                 </div>
                 <Label>
-                  I love Novels, Games and <br />
-                  Technology
+                  Hi, I'm Arthur. I love Novels, Games and
+                  Technology. <br/>
+                  Click the button bellow
+                  to know more!
                 </Label>
                 <SeeMore>Show me more</SeeMore>
               </LandingPage>
@@ -149,7 +153,7 @@ const Home: React.FC = () => {
         }}
       />
       <Background />
-      <BackgroundImage />
+      <BackgroundImage src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80" alt="Arthur's portfolio background" title="Arthur's portfolio background" />
     </Container>
   )
 }

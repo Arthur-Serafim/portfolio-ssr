@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
   box-sizing: border-box;
   padding: 200px;
   width: 100%;
-  height: 100vh;
+  height: max-content;
   background: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,11 +83,11 @@ export const RightContainer = styled.div`
 
 export const AboutLabel = styled.p`
   margin-top: 25px;
-  font-family: "Futura";
+  font-family: 'Futura';
   line-height: 1.5;
   font-size: 22px;
   letter-spacing: 3px;
-  opacity: .75;
+  opacity: 0.75;
   font-weight: 400;
 
   @media only screen and (max-width: 1300px) {
@@ -100,5 +100,80 @@ export const AboutLabel = styled.p`
 
   @media only screen and (max-width: 500px) {
     font-size: 14px !important;
+  }
+`
+
+export const AboutSkillLabel = styled.p`
+  font-family: 'Futura';
+  line-height: 1.5;
+  font-size: 22px;
+  letter-spacing: 3px;
+  opacity: 0.75;
+  font-weight: 400;
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 18px !important;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 16px !important;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 14px !important;
+  }
+`
+
+export const SkillsContainer = styled.div`
+  box-sizing: border-box;
+  padding: 200px;
+  padding-top: 0;
+  width: 100%;
+  background: #fff;
+  color: #35354e;
+
+  @media only screen and (max-width: 1600px) {
+    padding: 150px;
+    padding-top: 0;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    padding: 100px;
+    padding-top: 0;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 75px;
+    padding-top: 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 50px;
+    padding-top: 0;
+  }
+`
+
+export const AboutSkills = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+
+  & li {
+    margin-right: 25px;
+  }
+`
+
+export const AboutSkillsCaller = styled.h3`
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 2px solid #35354e;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-bottom: 5px;
+
+  &:first-of-type {
+    margin-top: 50px;
   }
 `

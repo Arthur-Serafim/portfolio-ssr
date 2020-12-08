@@ -12,15 +12,47 @@ import {
   ScrollDown,
   SeeMore
 } from '../styles/pages/Home'
-import { useRouter } from 'next/router'
+
 import {
   AboutContainer,
   AboutImage,
   AboutSectionsTitle,
   LeftContainer,
   RightContainer,
-  AboutLabel
+  AboutLabel,
+  SkillsContainer,
+  AboutSkills,
+  AboutSkillsCaller,
+  AboutSkillLabel
 } from '../styles/pages/AboutStyles'
+
+const markupSet = [
+  "HTML",
+  "CSS",
+  "SCSS",
+]
+
+const languageSet = [
+  "JavaScript",
+  "TypeScript",
+]
+
+const frameworkSet = [
+  "React",
+  "Redux",
+  "Next.JS",
+  "Svelte",
+  "Vue",
+  "Angular",
+]
+
+const backendSet = [
+  'Node',
+  'Express',
+  'AdonisJS',
+  'MongoDB',
+  'GraphQL'
+]
 
 const Home: React.FC = () => {
   const [active, setActive] = React.useState<boolean>(false)
@@ -83,7 +115,10 @@ const Home: React.FC = () => {
           property="og:description"
           content="Experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
         />
-        <meta property="og:image" content="https://www.awesomescreenshot.com/image/1643925/5775635-1019ad4acc948ca83cfb1fc094c330af.png" />
+        <meta
+          property="og:image"
+          content="https://www.awesomescreenshot.com/image/1643925/5775635-1019ad4acc948ca83cfb1fc094c330af.png"
+        />
         <meta
           name="google-site-verification"
           content="rEMDiQIif_fstK8yFKFJSHQl-AgU7fYJh7_K3iApLXk"
@@ -121,12 +156,14 @@ const Home: React.FC = () => {
         <LeftContainer>
           <AboutSectionsTitle>WHO ARE YOU?</AboutSectionsTitle>
           <AboutLabel>
-            Born in <strong>“Belo Horizonte”</strong>, in beautiful Brazil, I grew up using
-            the <strong>internet</strong>. Be it by playing videogames or watching Pokemon, I was
-            always <strong>connected</strong>. <br /> <br/>
-            After being a regular <strong>user</strong> for so long, I decided to take a step
-            further and <strong>study deeply</strong> how the internet works. Years later, here I
-            am, an <strong>active member</strong> of the developer community.
+            Born in <strong>“Belo Horizonte”</strong>, in beautiful Brazil, I
+            grew up using the <strong>internet</strong>. Be it by playing
+            videogames or watching Pokemon, I was always{' '}
+            <strong>connected</strong>. <br /> <br />
+            After being a regular <strong>user</strong> for so long, I decided
+            to take a step further and <strong>study deeply</strong> how the
+            internet works. Years later, here I am, an{' '}
+            <strong>active member</strong> of the developer community.
           </AboutLabel>
         </LeftContainer>
         <RightContainer>
@@ -136,6 +173,57 @@ const Home: React.FC = () => {
           />
         </RightContainer>
       </AboutContainer>
+      <SkillsContainer>
+        <AboutSectionsTitle>SKILL SET</AboutSectionsTitle>
+        <AboutSkillsCaller>
+          Markup
+        </AboutSkillsCaller>
+        <AboutSkills>
+          {markupSet.map((skill: string) => (
+            <li>
+              <AboutSkillLabel>
+                {skill}
+              </AboutSkillLabel>
+            </li>
+          ))}
+        </AboutSkills>
+        <AboutSkillsCaller>
+          Programing languages
+        </AboutSkillsCaller>
+        <AboutSkills>
+          {languageSet.map((skill: string) => (
+            <li>
+              <AboutSkillLabel>
+                {skill}
+              </AboutSkillLabel>
+            </li>
+          ))}
+        </AboutSkills>
+        <AboutSkillsCaller>
+          Frameworks
+        </AboutSkillsCaller>
+        <AboutSkills>
+          {frameworkSet.map((skill: string) => (
+            <li>
+              <AboutSkillLabel>
+                {skill}
+              </AboutSkillLabel>
+            </li>
+          ))}
+        </AboutSkills>
+        <AboutSkillsCaller>
+          back end
+        </AboutSkillsCaller>
+        <AboutSkills>
+          {backendSet.map((skill: string) => (
+            <li>
+              <AboutSkillLabel>
+                {skill}
+              </AboutSkillLabel>
+            </li>
+          ))}
+        </AboutSkills>
+      </SkillsContainer>
       <Background />
       <BackgroundImage
         src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1375&q=80"

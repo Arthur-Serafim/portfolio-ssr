@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           <AboutLabel>
             Mouse One Game is a gaming peripherals company that needed to boost
             their online presence. For that, I developed them a complete
-            website, that now serves as their lead caption, e-commerce, and
+            website, that now serves as their lead capture, e-commerce, and
             blogging portal.
           </AboutLabel>
           <AboutSkillsCaller>Features Implemented</AboutSkillsCaller>

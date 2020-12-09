@@ -54,6 +54,13 @@ const backendSet = [
   'GraphQL'
 ]
 
+const testingSet = [
+  'Jest',
+  'React Testing Library',
+  'Karma',
+  'Cypress'
+]
+
 const Home: React.FC = () => {
   function handleScrollDown() {
     document
@@ -182,6 +189,18 @@ const Home: React.FC = () => {
         </AboutSkillsCaller>
         <AboutSkills>
           {backendSet.map((skill: string) => (
+            <li key={Math.random()}>
+              <AboutSkillLabel>
+                {skill}
+              </AboutSkillLabel>
+            </li>
+          ))}
+        </AboutSkills>
+        <AboutSkillsCaller>
+          testing
+        </AboutSkillsCaller>
+        <AboutSkills>
+          {testingSet.map((skill: string) => (
             <li key={Math.random()}>
               <AboutSkillLabel>
                 {skill}

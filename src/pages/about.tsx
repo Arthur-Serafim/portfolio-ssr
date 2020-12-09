@@ -55,44 +55,10 @@ const backendSet = [
 ]
 
 const Home: React.FC = () => {
-  const [active, setActive] = React.useState<boolean>(false)
-
-  React.useEffect(() => {
-    document.addEventListener('scroll', function () {
-      let el = document.querySelector('#about')
-
-      if (!elementInViewport2(el)) {
-        setActive(true)
-      } else {
-        setActive(false)
-      }
-    })
-  }, [])
-
   function handleScrollDown() {
     document
       .querySelector('#about-container')
       .scrollIntoView({ behavior: 'smooth' })
-  }
-
-  function elementInViewport2(el) {
-    var top = el.offsetTop
-    var left = el.offsetLeft
-    var width = el.offsetWidth
-    var height = el.offsetHeight
-
-    while (el.offsetParent) {
-      el = el.offsetParent
-      top += el.offsetTop
-      left += el.offsetLeft
-    }
-
-    return (
-      top < window.pageYOffset + window.innerHeight &&
-      left < window.pageXOffset + window.innerWidth &&
-      top + height > window.pageYOffset &&
-      left + width > window.pageXOffset
-    )
   }
 
   return (
@@ -109,7 +75,7 @@ const Home: React.FC = () => {
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="Arthur Guimarães Serafim | Portfolio"
+          content="About Me | Arthur Guimarães Serafim"
         />
         <meta
           property="og:description"
@@ -124,7 +90,7 @@ const Home: React.FC = () => {
           content="rEMDiQIif_fstK8yFKFJSHQl-AgU7fYJh7_K3iApLXk"
         />
       </Head>
-      <Navbar fullpageApi active={active} />
+      <Navbar fullpageApi />
       <LandingPage id="about" className="section">
         <h2>ABOUT ME</h2>
         <div>
@@ -180,7 +146,7 @@ const Home: React.FC = () => {
         </AboutSkillsCaller>
         <AboutSkills>
           {markupSet.map((skill: string) => (
-            <li>
+            <li key={Math.random()}>
               <AboutSkillLabel>
                 {skill}
               </AboutSkillLabel>
@@ -192,7 +158,7 @@ const Home: React.FC = () => {
         </AboutSkillsCaller>
         <AboutSkills>
           {languageSet.map((skill: string) => (
-            <li>
+            <li key={Math.random()}>
               <AboutSkillLabel>
                 {skill}
               </AboutSkillLabel>
@@ -204,7 +170,7 @@ const Home: React.FC = () => {
         </AboutSkillsCaller>
         <AboutSkills>
           {frameworkSet.map((skill: string) => (
-            <li>
+            <li key={Math.random()}>
               <AboutSkillLabel>
                 {skill}
               </AboutSkillLabel>
@@ -216,7 +182,7 @@ const Home: React.FC = () => {
         </AboutSkillsCaller>
         <AboutSkills>
           {backendSet.map((skill: string) => (
-            <li>
+            <li key={Math.random()}>
               <AboutSkillLabel>
                 {skill}
               </AboutSkillLabel>

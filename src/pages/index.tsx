@@ -17,7 +17,7 @@ import {
 import { NavigationIcon } from '../styles/pages/NavbarStyles'
 import { useRouter } from 'next/router'
 
-const anchors = ['Home', 'About', 'MouseOne', 'GM-Routing', 'Contact']
+const anchors = ['Home', 'About', 'MouseOne', 'Contact']
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -103,19 +103,7 @@ const Home: React.FC = () => {
                   E-commerce, blog and <br />
                   landing page
                 </Label>
-                <SeeMore>See case study</SeeMore>
-              </LandingPage>
-              <LandingPage id="projects" className="section">
-                <h2>GM-ROUTING</h2>
-                <div>
-                  <Line />
-                  <br />
-                  <Line slot="end" />
-                </div>
-                <Label>
-                  Routing software for delivery <br /> optimization
-                </Label>
-                <SeeMore>See case study</SeeMore>
+                <SeeMore onClick={() => router.push('/case-study/mouse-one')}>See case study</SeeMore>
               </LandingPage>
               <LandingPage id="contact" className="section">
                 <h2>GET IN TOUCH</h2>

@@ -126,12 +126,12 @@ const Home: React.FC = () => {
                     />
                   </a>
                   <a
-                    href="https://www.instagram.com/arthur.serafim.12/"
+                    href="https://www.github.com/Arthur-Serafim"
                     target="_blank"
                     rel="norel"
                   >
                     <NavigationIcon
-                      className="fab fa-instagram"
+                      className="fab fa-github"
                       style={{ marginTop: '25px' }}
                     />
                   </a>

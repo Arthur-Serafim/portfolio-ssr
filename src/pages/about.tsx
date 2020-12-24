@@ -61,7 +61,7 @@ const testingSet = [
   'Cypress'
 ]
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
   function handleScrollDown() {
     document
       .querySelector('#about-container')
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
         />
         <meta
           property="og:description"
-          content="Experienced Front End Developer and Software Engineer with a detailed history of collaborating with stakeholders and driving exceptional results."
+          content="Hi, I’m Arthur, an experienced Front End Developer, and Software Engineer by way of Guarapari, Espirito Santo, Brazil. I’m always up for a good challenge, and that’s why I got into software engineering and app development in the first place. In this world, no two days are the same. The hours may be long, but the work is always fun and fruitful."
         />
         <meta
           property="og:image"
@@ -219,4 +219,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default About

@@ -141,7 +141,7 @@ const About: React.FC = () => {
         </LeftContainer>
         <RightContainer>
           <AboutImage
-            src="https://scontent.fguz1-1.fna.fbcdn.net/v/t1.0-9/117192269_2984489474993341_6769869719844714055_o.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=y8D_E2_Dq6wAX-w7vIs&_nc_ht=scontent.fguz1-1.fna&oh=4b5833e14d11d51e97ae8b302db418aa&oe=5FF28D52"
+            src="/assets/Profile.jpg"
             alt="Arthur Serafim Portrait"
           />
         </RightContainer>
